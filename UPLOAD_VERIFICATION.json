@@ -1,8 +1,13 @@
 {
   "package_id": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW",
-  "generated_at": "2026-06-27T15:05:56+00:00",
+  "repo_url": "https://github.com/ROLLcatCLUB/xiaojiao-1013r-r45-r47-in-page-model-quality-loop-review",
+  "raw_readme": "https://raw.githubusercontent.com/ROLLcatCLUB/xiaojiao-1013r-r45-r47-in-page-model-quality-loop-review/main/README.md",
+  "raw_gpt_review_note": "https://raw.githubusercontent.com/ROLLcatCLUB/xiaojiao-1013r-r45-r47-in-page-model-quality-loop-review/main/outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/GPT_REVIEW_NOTE.md",
+  "raw_result": "https://raw.githubusercontent.com/ROLLcatCLUB/xiaojiao-1013r-r45-r47-in-page-model-quality-loop-review/main/outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/R45_R47_result.json",
+  "uploaded_count_expected": 19,
+  "main_review_url": "http://127.0.0.1:5177/workbench/index.html?api=http%3A%2F%2F127.0.0.1%3A8084",
+  "local_zip_path": "D:\\Documents\\SmartEdu\\xiaobei-core\\outputs\\PREP_ROOM_RENDER_CANVAS_DEEPEN_V1\\1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW.zip",
+  "local_zip_sha256": "dd35e77d61bfc2f52d3e94e28311205c2906017b2d60a6525624a462461e2f5e",
   "forbidden_scan_pass": true,
-  "forbidden_hits": [],
-  "line_endings_guard": ".gitattributes with * -text",
   "main_repo_pushed": false
 }
