@@ -1,0 +1,184 @@
+{
+  "success": true,
+  "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+  "mode": "regenerate_in_page_candidate",
+  "context": {
+    "lesson": "三年级美术 2-1《色彩的渐变》",
+    "source": "current_workbench_prep_room",
+    "context_source": "workbench/index.html in-page component",
+    "before_text": "看图渐变，比较明度，尝试调色，展示作品。",
+    "teacher_problem": "这段教案太乱，帮我整理教学过程。"
+  },
+  "v1_candidate": {
+    "candidate_id": "CAND_1013R_R45_R47_TPC_001",
+    "candidate_type": "teaching_process_cleanup",
+    "candidate_label": "教学过程整理",
+    "target_slot": "当前教案教学过程预览槽",
+    "source": "real_model",
+    "status": "generated",
+    "provider_called": true,
+    "model_called": true,
+    "sandbox_only": true,
+    "formal_apply_allowed": false,
+    "overwrite_original_allowed": false,
+    "teacher_confirmation_required": true,
+    "before_or_context": "看图渐变，比较明度，尝试调色，展示作品。",
+    "candidate_content": "先观察教材和自然中的渐变，再比较同一颜色加入白色、黑色或灰色后的层次变化，随后用试色纸完成3到5格渐变，最后展示作品并说清颜色变化过程。",
+    "xiaojiao_suggestion": "当前 before_text 过于简略，仅有 4 个短句（看图渐变、比较明度、尝试调色、展示作品），缺乏三年级《色彩的渐变》一课教学过程应包含的关键环节：导入/情境创设、观察与感知（色相/明度渐变范例）、探究与方法（调色步骤、间色过渡）、实践体验（学生练一练、画一画）、展示评议（自评互评）、小结拓展。无法在不补充教师原始依据的情况下进行合理的'教学过程整理'，若直接扩写会存在捏造教材内容、虚构范例与步骤的风险。请老师在原教案中补充以下信息后重新生成：(1) 本课使用的教材版本及具体页码/图例；(2) 教师希望学生掌握的渐变类型（色相渐变/明度渐变/纯度渐变 哪一种为主）；(3) 课堂时长与环节分配；(4) 是否需要游戏、故事或情境导入；(5) 调色工具与材料（彩笔/水粉/油画棒 等）。",
+    "missing_requirements": [
+      "教材版本与具体页码/范例图未提供",
+      "本课重点的渐变类型（色相 / 明度 / 纯度）未指定",
+      "教学环节的顺序与时长未给出",
+      "导入方式（情境/游戏/故事/直接观察）未指定",
+      "学生使用的调色工具与材料未明确",
+      "展示评议环节的评价维度与方式未说明",
+      "教师对'步骤清楚一些'的具体期望（环节粒度、用语风格、是否分步骤标号）未量化"
+    ],
+    "risk_notes": [
+      "若仅凭'色彩的渐变'标题扩写，可能编造教材中的具体图例（如某幅范画的渐变方向），违反不虚构素材的规则",
+      "三年级美术课常见的'三段式'或'五环节'结构有多种版本，未确认前贸然生成会与教师原有教学设计冲突",
+      "调色步骤涉及具体颜料比例（'多加白变浅''加黑变深'等），不补充依据容易给出错误或片面的指导",
+      "展示评议环节若凭空加入'自评互评表'等元素，可能增加老师二次编辑负担"
+    ]
+  },
+  "v2_candidate": {
+    "candidate_id": "cand_1013R_R45_R47_teaching_process_cleanup_001",
+    "candidate_type": "teaching_process_cleanup",
+    "candidate_label": "教学过程整理",
+    "target_slot": "当前教案教学过程预览槽",
+    "source": "real_model",
+    "status": "generated",
+    "provider_called": true,
+    "model_called": true,
+    "sandbox_only": true,
+    "formal_apply_allowed": false,
+    "overwrite_original_allowed": false,
+    "teacher_confirmation_required": true,
+    "before_or_context": "看图渐变，比较明度，尝试调色，展示作品。",
+    "candidate_content": "一、观察导入（约 3 分钟）\n1. 出示教材第 X 页（缺教材具体页码）的渐变图片和生活中渐变实例（日出天空、影子、彩虹），请学生说一说颜色是怎么变化的。\n2. 板书课题：色彩的渐变。\n\n二、探究明度变化（约 8 分钟）\n1. 教师在白纸上涂一个色块，提问：在原色中加入白色、加入黑色、加入灰色，分别会变成什么样子？\n2. 学生分小组领取同一原色颜料和试色纸，每组尝试在试色纸上分别调出 3—5 格明度渐变（由浅到深或由深到浅）。\n3. 请 2—3 个小组把试色纸贴到黑板前，说一说调色时加了什么、顺序是什么、每格有什么变化。\n4. 教师小结：同一颜色加白变亮、加黑变暗、加灰变柔和，依次排列就形成明度渐变。\n\n三、示范与练习（约 15 分钟）\n1. 教师示范：在调色盘中先取原色，再一点点加白（或黑、灰），边加边涂格，每格之间颜色变化要小、过渡要自然。\n2. 学生独立完成一张渐变练习纸，至少 5 格，颜色变化均匀，格子之间看不出明显跳跃。\n3. 教师巡视，重点帮助调色困难和格子跳跃大的学生，提醒“少量多次”，不要一次加太多。\n\n四、展示与评讲（约 4 分钟）\n1. 把完成的作品贴到展示栏，学生互相看一看，指出哪一格过渡最自然、哪一格还能再改一改。\n2. 教师总结：说说今天用了哪几种调色方法，下节课会在渐变里加入两种颜色之间的变化。",
+    "xiaojiao_suggestion": "可以把每段预设时间、试色纸 3—5 格、巡视重点这些细节保留，老师改课时直接调数字或换例子；如果实际教材页码和图片位置确认下来，把“第 X 页”补成真实页码，把“日出天空、影子、彩虹”换成本课指定的渐变范例。",
+    "missing_requirements": [
+      "教材中渐变例图所在的具体页码",
+      "本课指定的渐变范例图（是教材彩图还是另附范作）",
+      "本节课是否要求使用两种颜色之间的色相渐变，还是只做同一颜色的明度渐变",
+      "学生使用的纸张大小、颜料种类等具体育具信息"
+    ],
+    "risk_notes": [
+      "before_text 本身信息很少，无教材页码和具体素材线索，candidate_content 中“教材第 X 页”和渐变实例是按常见编写方式补的，落到具体教材可能不一致，老师使用前需要核对教材页和图例",
+      "时间分配是按 30 分钟课时估的，若实际课时不同，段名括号里的小时建议直接改",
+      "未引入学生学情和真实班级数据，避免写成“第几组某同学”这类无法验证的描述"
+    ]
+  },
+  "candidate": {
+    "candidate_id": "cand_1013R_R45_R47_teaching_process_cleanup_001",
+    "candidate_type": "teaching_process_cleanup",
+    "candidate_label": "教学过程整理",
+    "target_slot": "当前教案教学过程预览槽",
+    "source": "real_model",
+    "status": "generated",
+    "provider_called": true,
+    "model_called": true,
+    "sandbox_only": true,
+    "formal_apply_allowed": false,
+    "overwrite_original_allowed": false,
+    "teacher_confirmation_required": true,
+    "before_or_context": "看图渐变，比较明度，尝试调色，展示作品。",
+    "candidate_content": "一、观察导入（约 3 分钟）\n1. 出示教材第 X 页（缺教材具体页码）的渐变图片和生活中渐变实例（日出天空、影子、彩虹），请学生说一说颜色是怎么变化的。\n2. 板书课题：色彩的渐变。\n\n二、探究明度变化（约 8 分钟）\n1. 教师在白纸上涂一个色块，提问：在原色中加入白色、加入黑色、加入灰色，分别会变成什么样子？\n2. 学生分小组领取同一原色颜料和试色纸，每组尝试在试色纸上分别调出 3—5 格明度渐变（由浅到深或由深到浅）。\n3. 请 2—3 个小组把试色纸贴到黑板前，说一说调色时加了什么、顺序是什么、每格有什么变化。\n4. 教师小结：同一颜色加白变亮、加黑变暗、加灰变柔和，依次排列就形成明度渐变。\n\n三、示范与练习（约 15 分钟）\n1. 教师示范：在调色盘中先取原色，再一点点加白（或黑、灰），边加边涂格，每格之间颜色变化要小、过渡要自然。\n2. 学生独立完成一张渐变练习纸，至少 5 格，颜色变化均匀，格子之间看不出明显跳跃。\n3. 教师巡视，重点帮助调色困难和格子跳跃大的学生，提醒“少量多次”，不要一次加太多。\n\n四、展示与评讲（约 4 分钟）\n1. 把完成的作品贴到展示栏，学生互相看一看，指出哪一格过渡最自然、哪一格还能再改一改。\n2. 教师总结：说说今天用了哪几种调色方法，下节课会在渐变里加入两种颜色之间的变化。",
+    "xiaojiao_suggestion": "可以把每段预设时间、试色纸 3—5 格、巡视重点这些细节保留，老师改课时直接调数字或换例子；如果实际教材页码和图片位置确认下来，把“第 X 页”补成真实页码，把“日出天空、影子、彩虹”换成本课指定的渐变范例。",
+    "missing_requirements": [
+      "教材中渐变例图所在的具体页码",
+      "本课指定的渐变范例图（是教材彩图还是另附范作）",
+      "本节课是否要求使用两种颜色之间的色相渐变，还是只做同一颜色的明度渐变",
+      "学生使用的纸张大小、颜料种类等具体育具信息"
+    ],
+    "risk_notes": [
+      "before_text 本身信息很少，无教材页码和具体素材线索，candidate_content 中“教材第 X 页”和渐变实例是按常见编写方式补的，落到具体教材可能不一致，老师使用前需要核对教材页和图例",
+      "时间分配是按 30 分钟课时估的，若实际课时不同，段名括号里的小时建议直接改",
+      "未引入学生学情和真实班级数据，避免写成“第几组某同学”这类无法验证的描述"
+    ]
+  },
+  "quality_panel": {
+    "candidate_id": "cand_1013R_R45_R47_teaching_process_cleanup_001",
+    "candidate_type": "teaching_process_cleanup",
+    "status": "evaluated",
+    "scores": {
+      "structure_completeness": 4,
+      "subject_alignment": 4,
+      "source_alignment": 4,
+      "teacher_readability": 4,
+      "actionability": 4,
+      "hallucination_risk": 1,
+      "revision_value": 4
+    },
+    "total_score": 28,
+    "pass_line": 24,
+    "basic_quality_pass": true,
+    "requires_human_attention": false,
+    "blocked_reason": null,
+    "adjustment_points": [
+      "继续压实教师可改建议和缺口列表"
+    ]
+  },
+  "comparison": {
+    "v1_score": 28,
+    "v2_score": 28,
+    "improvement_delta": 0,
+    "improved": false,
+    "same_score": true,
+    "v2_basic_quality_pass": true
+  },
+  "model_call_log_redacted": {
+    "call_id": "R47_in_page_regenerate_teaching_process_cleanup",
+    "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+    "candidate_type": "teaching_process_cleanup_regenerate",
+    "provider_called": true,
+    "model_called": true,
+    "status": "success",
+    "prompt_hash": "d9c2b9dd4097c4dbb3065e493ff37910cfad7825fde1805aef28c37f6e315732",
+    "latency_ms": 14258,
+    "input_tokens_estimate": 471,
+    "output_tokens_estimate": 634,
+    "pricing_table_configured": false,
+    "estimated_cost": null,
+    "provider_meta": {
+      "provider": "openai_compatible",
+      "model": "MiniMax-M3",
+      "base_url": "https://api.minimaxi.com/v1",
+      "credential_source": "env",
+      "reasoning_split": true,
+      "latency_ms": 14258
+    }
+  },
+  "message": "再生成结果已回填到当前工作台组件，未保存、未导出、未覆盖。",
+  "boundary": {
+    "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+    "sandbox_only": true,
+    "provider_call_allowed": true,
+    "model_call_allowed": true,
+    "provider_called": true,
+    "model_called": true,
+    "formal_apply_allowed": false,
+    "formal_apply_performed": false,
+    "save_allowed": false,
+    "save_performed": false,
+    "export_allowed": false,
+    "export_performed": false,
+    "archive_allowed": false,
+    "archive_performed": false,
+    "database_write_allowed": false,
+    "database_written": false,
+    "feishu_write_allowed": false,
+    "feishu_written": false,
+    "memory_write_allowed": false,
+    "memory_written": false,
+    "student_private_data_allowed": false,
+    "student_data_read": false,
+    "overwrite_original_allowed": false,
+    "original_lesson_overwritten": false,
+    "main_repo_pushed": false,
+    "R45_requires_user_review": true,
+    "in_page_integration": true,
+    "main_outcome_is_workbench_component": true,
+    "standalone_html_is_main_outcome": false
+  }
+}
