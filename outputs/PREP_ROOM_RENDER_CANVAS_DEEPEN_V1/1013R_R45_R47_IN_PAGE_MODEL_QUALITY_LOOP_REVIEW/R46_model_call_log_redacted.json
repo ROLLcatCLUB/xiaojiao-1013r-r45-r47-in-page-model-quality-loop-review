@@ -1,0 +1,22 @@
+{
+  "call_id": "R45_R47_in_page_teaching_process_cleanup",
+  "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+  "candidate_type": "teaching_process_cleanup",
+  "provider_called": true,
+  "model_called": true,
+  "status": "success",
+  "prompt_hash": "e9b235b414c294ce461d38b582bb58bc1269ac97a7fa65c610c27a71f119bf45",
+  "latency_ms": 10068,
+  "input_tokens_estimate": 435,
+  "output_tokens_estimate": 495,
+  "pricing_table_configured": false,
+  "estimated_cost": null,
+  "provider_meta": {
+    "provider": "openai_compatible",
+    "model": "MiniMax-M3",
+    "base_url": "https://api.minimaxi.com/v1",
+    "credential_source": "env",
+    "reasoning_split": true,
+    "latency_ms": 10067
+  }
+}
