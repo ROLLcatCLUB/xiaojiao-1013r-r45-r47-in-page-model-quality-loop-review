@@ -23,20 +23,24 @@ def require(condition: bool, message: str) -> None:
 
 
 def main() -> int:
-    index = read_text(ROOT / "frontend" / "workbench" / "index.html")
-    js = read_text(ROOT / "frontend" / "workbench" / "workbench_in_page_model_quality_loop_1013R_R45_R47.js")
-    css = read_text(ROOT / "frontend" / "workbench" / "workbench_in_page_model_quality_loop_1013R_R45_R47.css")
+    r21_page = read_text(
+        ROOT
+        / "outputs"
+        / "PREP_ROOM_RENDER_CANVAS_DEEPEN_V1"
+        / "1013R_R21_page_copy_binds_unified_package"
+        / "prep_room_page_copy_binds_unified_package_1013R_R21.html"
+    )
     backend = read_text(ROOT / "backend" / "xiaobei_ai" / "prep_room_in_page_model_quality_loop_1013R_R45_R47.py")
     server = read_text(ROOT / "scripts" / "start_workbench_ai_v13_local.py")
 
-    require("workbench_in_page_model_quality_loop_1013R_R45_R47.js" in index, "index_html_missing_r45_r47_js")
-    require("workbench_in_page_model_quality_loop_1013R_R45_R47.css" in index, "index_html_missing_r45_r47_css")
-    require('data-card="modelQualityLoop"' in js or "modelQualityLoop" in js, "frontend_missing_model_quality_card")
-    require("/api/prep-room/model-quality/state" in js, "frontend_missing_state_route")
-    require("/api/prep-room/model-quality/generate" in js, "frontend_missing_generate_route")
-    require("/api/prep-room/model-quality/regenerate" in js, "frontend_missing_regenerate_route")
-    require("候选只用于预览和质量观察" in js, "frontend_missing_teacher_visible_boundary")
-    require("审核生成物" not in js + css + index, "forbidden_review_artifact_copy_visible")
+    require("1013R_R21_PAGE_COPY_BINDS_UNIFIED_PACKAGE" in r21_page, "r21_page_not_targeted")
+    require("r45r47-model-loop" in r21_page, "r21_missing_model_quality_card")
+    require("模型候选沙盒" in r21_page, "r21_missing_teacher_visible_title")
+    require("data-r45r47-generate" in r21_page, "r21_missing_generate_buttons")
+    require("/api/prep-room/model-quality/generate" in r21_page, "r21_missing_generate_route")
+    require("/api/prep-room/model-quality/regenerate" in r21_page, "r21_missing_regenerate_route")
+    require("候选只用于本页预览和质量观察" in r21_page, "r21_missing_teacher_visible_boundary")
+    require("审核生成物" not in r21_page, "forbidden_review_artifact_copy_visible")
     require("STATE_ROUTE" in backend and "GENERATE_ROUTE" in backend and "REGENERATE_ROUTE" in backend, "backend_missing_routes")
     require("formal_apply_allowed" in backend and "False" in backend, "backend_missing_formal_apply_guard")
     require("standalone_html_is_main_outcome" in backend, "backend_missing_not_standalone_flag")
@@ -46,7 +50,7 @@ def main() -> int:
     result = read_json(OUT_DIR / "R45_R47_result.json")
     boundary = result.get("boundary") or {}
     require(result.get("ok") is True, "result_not_ok")
-    require(result.get("main_outcome") == "existing_workbench_in_page_component", "main_outcome_not_workbench_component")
+    require(result.get("main_outcome") == "current_R21_page_copy_in_page_component", "main_outcome_not_r21_component")
     require(result.get("standalone_html_main_outcome") is False, "standalone_html_marked_as_main")
     require(boundary.get("sandbox_only") is True, "sandbox_only_not_true")
     require(boundary.get("formal_apply_allowed") is False, "formal_apply_allowed_not_false")
