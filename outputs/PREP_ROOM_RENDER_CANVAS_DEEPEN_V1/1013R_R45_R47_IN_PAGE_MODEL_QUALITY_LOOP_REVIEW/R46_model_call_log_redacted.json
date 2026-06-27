@@ -6,9 +6,9 @@
   "model_called": true,
   "status": "success",
   "prompt_hash": "e9b235b414c294ce461d38b582bb58bc1269ac97a7fa65c610c27a71f119bf45",
-  "latency_ms": 10068,
+  "latency_ms": 12391,
   "input_tokens_estimate": 435,
-  "output_tokens_estimate": 495,
+  "output_tokens_estimate": 567,
   "pricing_table_configured": false,
   "estimated_cost": null,
   "provider_meta": {
@@ -17,6 +17,6 @@
     "base_url": "https://api.minimaxi.com/v1",
     "credential_source": "env",
     "reasoning_split": true,
-    "latency_ms": 10067
+    "latency_ms": 12391
   }
 }
