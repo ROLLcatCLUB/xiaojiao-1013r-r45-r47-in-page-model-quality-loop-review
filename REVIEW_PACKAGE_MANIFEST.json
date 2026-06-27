@@ -1,0 +1,107 @@
+{
+  "package_id": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW",
+  "generated_at": "2026-06-27T15:05:56+00:00",
+  "source_repo": "D:\\Documents\\SmartEdu\\xiaobei-core",
+  "target_dir": "D:\\Documents\\SmartEdu\\xiaobei-core\\outputs\\PREP_ROOM_RENDER_CANVAS_DEEPEN_V1\\1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW\\review_repo_payload",
+  "copied_count": 15,
+  "missing": [],
+  "copy_items": [
+    {
+      "path": "backend/xiaobei_ai/prep_room_in_page_model_quality_loop_1013R_R45_R47.py",
+      "copied": true,
+      "bytes": 12140,
+      "sha256": "6d69d8ec7a7aa81827ea89a9e1dfd5809f8ce03cc8442851757776c075cd065a"
+    },
+    {
+      "path": "backend/xiaobei_ai/prep_room_model_quality_loop_1013R_R40_R44.py",
+      "copied": true,
+      "bytes": 30925,
+      "sha256": "2a39d0e811706fc988c6675cfed7c91b6d7e4927de6fd95bd51f4d53559083e1"
+    },
+    {
+      "path": "scripts/start_workbench_ai_v13_local.py",
+      "copied": true,
+      "bytes": 8763,
+      "sha256": "afe89ecf535ccac2414817e3493efc5fa91a84d00be794081147e61fa9b53f51"
+    },
+    {
+      "path": "scripts/build_1013R_R45_R47_in_page_model_quality_loop.py",
+      "copied": true,
+      "bytes": 5540,
+      "sha256": "88bc2f2c7858c8e995a84a3ded687478bd9493f4af0ce1ba2054fec1f708351c"
+    },
+    {
+      "path": "scripts/validate_1013R_R45_R47_in_page_model_quality_loop.py",
+      "copied": true,
+      "bytes": 4147,
+      "sha256": "d26d2dbe4ce421e251b8fcbba22c97fe213f43f813090025a26ee2ef8da92b18"
+    },
+    {
+      "path": "frontend/workbench/index.html",
+      "copied": true,
+      "bytes": 74545,
+      "sha256": "991a3b67aa03e2541871c513632f795c86a8757469dbab6a9ac658e1b71e9603"
+    },
+    {
+      "path": "frontend/workbench/workbench_in_page_model_quality_loop_1013R_R45_R47.js",
+      "copied": true,
+      "bytes": 12195,
+      "sha256": "19eca3594d58ed4108c0251f687847263ed5e55010980ef92c80031a2307bed2"
+    },
+    {
+      "path": "frontend/workbench/workbench_in_page_model_quality_loop_1013R_R45_R47.css",
+      "copied": true,
+      "bytes": 2668,
+      "sha256": "e8e5a4f50ec69c914b2ef5037c0613097f90a8b793bdb0e918b38e3f9ca43535"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/R45_in_page_model_sandbox_state.json",
+      "copied": true,
+      "bytes": 2665,
+      "sha256": "3dd5490519bfe3e8dd8f5098f49b40760885f90d8007a275c5dddbe208e0cce2"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/R46_in_page_generation_state.json",
+      "copied": true,
+      "bytes": 5992,
+      "sha256": "309a5fa90a1f602c0e2aa8bb76ad844981b198bbc46cb5e4f8f145703487e1ca"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/R46_model_call_log_redacted.json",
+      "copied": true,
+      "bytes": 729,
+      "sha256": "4f19cffe67804c1f6cb1f42df32e6302b85d0b0f7259ef953ae708e49d90a937"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/R47_regeneration_comparison_state.json",
+      "copied": true,
+      "bytes": 13050,
+      "sha256": "979c58a4086c161a3898fa95ae2a57e7370804852dc52b42b2773df7df14580d"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/R45_R47_result.json",
+      "copied": true,
+      "bytes": 2212,
+      "sha256": "14c9fc69a52a36195a34fbacf99095d7af87313742a789c3249a9a4ef5a9f654"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/WORKBENCH_OPEN_URL.txt",
+      "copied": true,
+      "bytes": 78,
+      "sha256": "c352ec7799def9f6fb3946bacccee168ce580882fdeeaacea92a93d054e24893"
+    },
+    {
+      "path": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW/GPT_REVIEW_NOTE.md",
+      "copied": true,
+      "bytes": 1322,
+      "sha256": "8b3e8312bed87fa951958c4a0f8b71ccaccf51fc335727333f350d74d1d9268c"
+    }
+  ],
+  "main_outcome": "existing_workbench_in_page_component",
+  "main_review_url": "http://127.0.0.1:5177/workbench/index.html?api=http%3A%2F%2F127.0.0.1%3A8084",
+  "standalone_html_main_outcome": false,
+  "forbidden_hits": [],
+  "forbidden_scan_pass": true,
+  "zip_path": "D:\\Documents\\SmartEdu\\xiaobei-core\\outputs\\PREP_ROOM_RENDER_CANVAS_DEEPEN_V1\\1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW.zip",
+  "zip_sha256": "dd35e77d61bfc2f52d3e94e28311205c2906017b2d60a6525624a462461e2f5e"
+}
