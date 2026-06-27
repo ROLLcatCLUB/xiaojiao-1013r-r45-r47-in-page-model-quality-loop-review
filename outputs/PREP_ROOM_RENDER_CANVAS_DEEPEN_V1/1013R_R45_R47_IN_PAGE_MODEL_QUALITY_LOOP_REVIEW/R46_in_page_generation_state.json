@@ -1,0 +1,120 @@
+{
+  "success": true,
+  "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+  "mode": "generate_in_page_candidate",
+  "context": {
+    "lesson": "三年级美术 2-1《色彩的渐变》",
+    "source": "current_workbench_prep_room",
+    "context_source": "workbench/index.html in-page component",
+    "before_text": "看图渐变，比较明度，尝试调色，展示作品。",
+    "teacher_problem": "这段教案太乱，帮我整理教学过程。"
+  },
+  "candidate": {
+    "candidate_id": "CAND_1013R_R45_R47_TPC_001",
+    "candidate_type": "teaching_process_cleanup",
+    "candidate_label": "教学过程整理",
+    "target_slot": "当前教案教学过程预览槽",
+    "source": "real_model",
+    "status": "generated",
+    "provider_called": true,
+    "model_called": true,
+    "sandbox_only": true,
+    "formal_apply_allowed": false,
+    "overwrite_original_allowed": false,
+    "teacher_confirmation_required": true,
+    "before_or_context": "看图渐变，比较明度，尝试调色，展示作品。",
+    "candidate_content": "先观察教材和自然中的渐变，再比较同一颜色加入白色、黑色或灰色后的层次变化，随后用试色纸完成3到5格渐变，最后展示作品并说清颜色变化过程。",
+    "xiaojiao_suggestion": "当前 before_text 过于简略，仅有 4 个短句（看图渐变、比较明度、尝试调色、展示作品），缺乏三年级《色彩的渐变》一课教学过程应包含的关键环节：导入/情境创设、观察与感知（色相/明度渐变范例）、探究与方法（调色步骤、间色过渡）、实践体验（学生练一练、画一画）、展示评议（自评互评）、小结拓展。无法在不补充教师原始依据的情况下进行合理的'教学过程整理'，若直接扩写会存在捏造教材内容、虚构范例与步骤的风险。请老师在原教案中补充以下信息后重新生成：(1) 本课使用的教材版本及具体页码/图例；(2) 教师希望学生掌握的渐变类型（色相渐变/明度渐变/纯度渐变 哪一种为主）；(3) 课堂时长与环节分配；(4) 是否需要游戏、故事或情境导入；(5) 调色工具与材料（彩笔/水粉/油画棒 等）。",
+    "missing_requirements": [
+      "教材版本与具体页码/范例图未提供",
+      "本课重点的渐变类型（色相 / 明度 / 纯度）未指定",
+      "教学环节的顺序与时长未给出",
+      "导入方式（情境/游戏/故事/直接观察）未指定",
+      "学生使用的调色工具与材料未明确",
+      "展示评议环节的评价维度与方式未说明",
+      "教师对'步骤清楚一些'的具体期望（环节粒度、用语风格、是否分步骤标号）未量化"
+    ],
+    "risk_notes": [
+      "若仅凭'色彩的渐变'标题扩写，可能编造教材中的具体图例（如某幅范画的渐变方向），违反不虚构素材的规则",
+      "三年级美术课常见的'三段式'或'五环节'结构有多种版本，未确认前贸然生成会与教师原有教学设计冲突",
+      "调色步骤涉及具体颜料比例（'多加白变浅''加黑变深'等），不补充依据容易给出错误或片面的指导",
+      "展示评议环节若凭空加入'自评互评表'等元素，可能增加老师二次编辑负担"
+    ]
+  },
+  "quality_panel": {
+    "candidate_id": "CAND_1013R_R45_R47_TPC_001",
+    "candidate_type": "teaching_process_cleanup",
+    "status": "evaluated",
+    "scores": {
+      "structure_completeness": 4,
+      "subject_alignment": 4,
+      "source_alignment": 4,
+      "teacher_readability": 4,
+      "actionability": 4,
+      "hallucination_risk": 1,
+      "revision_value": 4
+    },
+    "total_score": 28,
+    "pass_line": 24,
+    "basic_quality_pass": true,
+    "requires_human_attention": false,
+    "blocked_reason": null,
+    "adjustment_points": [
+      "继续压实教师可改建议和缺口列表"
+    ]
+  },
+  "model_call_log_redacted": {
+    "call_id": "R45_R47_in_page_teaching_process_cleanup",
+    "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+    "candidate_type": "teaching_process_cleanup",
+    "provider_called": true,
+    "model_called": true,
+    "status": "success",
+    "prompt_hash": "e9b235b414c294ce461d38b582bb58bc1269ac97a7fa65c610c27a71f119bf45",
+    "latency_ms": 10068,
+    "input_tokens_estimate": 435,
+    "output_tokens_estimate": 495,
+    "pricing_table_configured": false,
+    "estimated_cost": null,
+    "provider_meta": {
+      "provider": "openai_compatible",
+      "model": "MiniMax-M3",
+      "base_url": "https://api.minimaxi.com/v1",
+      "credential_source": "env",
+      "reasoning_split": true,
+      "latency_ms": 10067
+    }
+  },
+  "message": "候选已回填到当前工作台组件，未保存、未导出、未覆盖。",
+  "boundary": {
+    "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+    "sandbox_only": true,
+    "provider_call_allowed": true,
+    "model_call_allowed": true,
+    "provider_called": true,
+    "model_called": true,
+    "formal_apply_allowed": false,
+    "formal_apply_performed": false,
+    "save_allowed": false,
+    "save_performed": false,
+    "export_allowed": false,
+    "export_performed": false,
+    "archive_allowed": false,
+    "archive_performed": false,
+    "database_write_allowed": false,
+    "database_written": false,
+    "feishu_write_allowed": false,
+    "feishu_written": false,
+    "memory_write_allowed": false,
+    "memory_written": false,
+    "student_private_data_allowed": false,
+    "student_data_read": false,
+    "overwrite_original_allowed": false,
+    "original_lesson_overwritten": false,
+    "main_repo_pushed": false,
+    "R45_requires_user_review": true,
+    "in_page_integration": true,
+    "main_outcome_is_workbench_component": true,
+    "standalone_html_is_main_outcome": false
+  }
+}
