@@ -1,0 +1,65 @@
+{
+  "ok": true,
+  "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+  "generated_at": "2026-06-27T15:05:01+00:00",
+  "main_review_url": "http://127.0.0.1:5177/workbench/index.html?api=http%3A%2F%2F127.0.0.1%3A8084",
+  "main_outcome": "existing_workbench_in_page_component",
+  "standalone_html_main_outcome": false,
+  "r45": {
+    "status": "PASS_IN_PAGE_MODEL_SANDBOX_PANEL",
+    "workbench_component": "frontend/workbench/workbench_in_page_model_quality_loop_1013R_R45_R47.js",
+    "state_status": 200
+  },
+  "r46": {
+    "status": "PASS_IN_PAGE_REAL_MODEL_CANDIDATE_GENERATION",
+    "generation_status": 200,
+    "candidate_status": "generated",
+    "provider_called": true,
+    "model_called": true,
+    "quality_total_score": 28
+  },
+  "r47": {
+    "status": "PASS_IN_PAGE_QUALITY_EVALUATION_AND_REGENERATION",
+    "regeneration_status": 200,
+    "comparison": {
+      "v1_score": 28,
+      "v2_score": 28,
+      "improvement_delta": 0,
+      "improved": false,
+      "same_score": true,
+      "v2_basic_quality_pass": true
+    }
+  },
+  "boundary": {
+    "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+    "sandbox_only": true,
+    "provider_call_allowed": true,
+    "model_call_allowed": true,
+    "provider_called": true,
+    "model_called": true,
+    "formal_apply_allowed": false,
+    "formal_apply_performed": false,
+    "save_allowed": false,
+    "save_performed": false,
+    "export_allowed": false,
+    "export_performed": false,
+    "archive_allowed": false,
+    "archive_performed": false,
+    "database_write_allowed": false,
+    "database_written": false,
+    "feishu_write_allowed": false,
+    "feishu_written": false,
+    "memory_write_allowed": false,
+    "memory_written": false,
+    "student_private_data_allowed": false,
+    "student_data_read": false,
+    "overwrite_original_allowed": false,
+    "original_lesson_overwritten": false,
+    "main_repo_pushed": false,
+    "R45_requires_user_review": true,
+    "in_page_integration": true,
+    "main_outcome_is_workbench_component": true,
+    "standalone_html_is_main_outcome": false
+  },
+  "next_stage": "R48_USER_WORKBENCH_REVIEW_REQUIRED"
+}
