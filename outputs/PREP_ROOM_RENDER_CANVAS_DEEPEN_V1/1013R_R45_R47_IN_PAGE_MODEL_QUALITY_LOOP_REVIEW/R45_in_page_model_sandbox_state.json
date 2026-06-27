@@ -1,0 +1,80 @@
+{
+  "success": true,
+  "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+  "mode": "in_page_model_quality_loop",
+  "context": {
+    "lesson": "三年级美术 2-1《色彩的渐变》",
+    "source": "current_workbench_prep_room",
+    "context_source": "workbench/index.html in-page component",
+    "before_text": "看图渐变，比较明度，尝试调色，展示作品。",
+    "teacher_problem": "这段教案太乱，帮我整理教学过程。"
+  },
+  "candidate_types": [
+    {
+      "id": "teaching_process_cleanup",
+      "label": "教学过程整理",
+      "target_slot": "当前教案教学过程预览槽"
+    },
+    {
+      "id": "courseware_script_candidate",
+      "label": "课件脚本候选",
+      "target_slot": "右侧课件/课件制作预览"
+    },
+    {
+      "id": "classroom_display_candidate",
+      "label": "大屏呈现候选",
+      "target_slot": "大屏草稿预览"
+    },
+    {
+      "id": "worksheet_candidate",
+      "label": "学习单候选",
+      "target_slot": "学生任务单预览"
+    },
+    {
+      "id": "assessment_rubric_candidate",
+      "label": "评价维度候选",
+      "target_slot": "评价表预览"
+    }
+  ],
+  "provider": {
+    "provider_name": "openai_compatible",
+    "model": "MiniMax-M3",
+    "base_url": "https://api.minimaxi.com/v1",
+    "credential_source": "env",
+    "credential_available": true,
+    "token_preview": null,
+    "safe_for_preview_runtime": true
+  },
+  "message": "候选只用于预览和质量观察，不会保存到正式备课本。",
+  "boundary": {
+    "stage": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_INTEGRATION",
+    "sandbox_only": true,
+    "provider_call_allowed": true,
+    "model_call_allowed": true,
+    "provider_called": false,
+    "model_called": false,
+    "formal_apply_allowed": false,
+    "formal_apply_performed": false,
+    "save_allowed": false,
+    "save_performed": false,
+    "export_allowed": false,
+    "export_performed": false,
+    "archive_allowed": false,
+    "archive_performed": false,
+    "database_write_allowed": false,
+    "database_written": false,
+    "feishu_write_allowed": false,
+    "feishu_written": false,
+    "memory_write_allowed": false,
+    "memory_written": false,
+    "student_private_data_allowed": false,
+    "student_data_read": false,
+    "overwrite_original_allowed": false,
+    "original_lesson_overwritten": false,
+    "main_repo_pushed": false,
+    "R45_requires_user_review": true,
+    "in_page_integration": true,
+    "main_outcome_is_workbench_component": true,
+    "standalone_html_is_main_outcome": false
+  }
+}
