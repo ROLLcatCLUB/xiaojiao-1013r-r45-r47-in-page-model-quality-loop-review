@@ -1,0 +1,8 @@
+{
+  "package_id": "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW",
+  "generated_at": "2026-06-27T15:05:56+00:00",
+  "forbidden_scan_pass": true,
+  "forbidden_hits": [],
+  "line_endings_guard": ".gitattributes with * -text",
+  "main_repo_pushed": false
+}
