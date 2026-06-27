@@ -12,7 +12,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 OUT_DIR = ROOT / "outputs" / "PREP_ROOM_RENDER_CANVAS_DEEPEN_V1" / "1013R_R45_R47_IN_PAGE_MODEL_QUALITY_LOOP_REVIEW"
-WORKBENCH_URL = "http://127.0.0.1:5177/workbench/index.html?api=http%3A%2F%2F127.0.0.1%3A8084"
+WORKBENCH_URL = "file:///D:/Documents/SmartEdu/xiaobei-core/outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R21_page_copy_binds_unified_package/prep_room_page_copy_binds_unified_package_1013R_R21.html"
 
 
 def now() -> str:
@@ -62,11 +62,11 @@ def main() -> None:
         "stage": loop.STAGE_ID,
         "generated_at": now(),
         "main_review_url": WORKBENCH_URL,
-        "main_outcome": "existing_workbench_in_page_component",
+        "main_outcome": "current_R21_page_copy_in_page_component",
         "standalone_html_main_outcome": False,
         "r45": {
             "status": "PASS_IN_PAGE_MODEL_SANDBOX_PANEL",
-            "workbench_component": "frontend/workbench/workbench_in_page_model_quality_loop_1013R_R45_R47.js",
+            "workbench_component": "outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R21_page_copy_binds_unified_package/prep_room_page_copy_binds_unified_package_1013R_R21.html",
             "state_status": state_status,
         },
         "r46": {
@@ -98,7 +98,7 @@ def main() -> None:
 
 ```text
 stage={loop.STAGE_ID}
-main_outcome=existing_workbench_in_page_component
+main_outcome=current_R21_page_copy_in_page_component
 main_review_url={WORKBENCH_URL}
 standalone_html_main_outcome=false
 sandbox_only=true
@@ -114,8 +114,9 @@ NEXT_STAGE=R48_USER_WORKBENCH_REVIEW_REQUIRED
 
 ## What Changed
 
-- The model quality loop is mounted inside `frontend/workbench/index.html`.
-- The in-page card is implemented by `frontend/workbench/workbench_in_page_model_quality_loop_1013R_R45_R47.js`.
+- The model quality loop is mounted inside the current R21 page copy:
+  `outputs/PREP_ROOM_RENDER_CANVAS_DEEPEN_V1/1013R_R21_page_copy_binds_unified_package/prep_room_page_copy_binds_unified_package_1013R_R21.html`.
+- The in-page card is rendered inside the existing R21 right-side tool panel, not in a separate workbench page.
 - The card calls the local API routes:
   - `GET /api/prep-room/model-quality/state`
   - `POST /api/prep-room/model-quality/generate`
